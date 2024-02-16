@@ -1,0 +1,36 @@
+/* =============== Start Footer Style =============== */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.9rem;
+}
+
+.footer .navigate {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .navigate .nav-link {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+
+.footer .navigate .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.footer .copyright {
+  color: rgb(113 113 122);
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+/* =============== End Footer Style =============== */

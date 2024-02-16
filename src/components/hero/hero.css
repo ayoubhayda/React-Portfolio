@@ -1,0 +1,92 @@
+/* =================== Start Hero Section Style =================== */
+
+/* ------- Hero Section ------- */
+section.hero{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+/* ------- Left Hero Section ------- */
+.hero .left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    flex-grow: 1;
+}
+
+/* ------- Avatar Box ------- */
+.hero .left-section .avatar-box{
+    display: flex;
+    align-items: end;
+    min-height: 88px;
+    gap: 0.1rem;
+}
+
+.hero .left-section .avatar-box .avatar{
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+}
+
+.hero .left-section .avatar-box .icon-verified{
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+
+/* ------- Details Box ------- */
+.hero .left-section .details-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero .left-section .details-box .title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    color: var(--text-primary);
+}
+
+.hero .left-section .details-box .sub-title{
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+}
+
+/* ------- Icons Box ------- */
+.hero .left-section .icons-box{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero .left-section .icons-box .icon{
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.hero .left-section .icons-box .icon:hover{
+    color: var(--icon-hover-color);
+    transform: scale(1.1);
+}
+
+
+.hero .right-section{
+    width: 50%;
+    translate: 100px 55px;
+}
+
+@media (max-width: 1142px){
+    .hero .right-section{
+        display: none;
+    }
+}
+
+
+/* =================== End Hero Section Style =================== */

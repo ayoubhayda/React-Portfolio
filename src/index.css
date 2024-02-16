@@ -1,0 +1,128 @@
+/* Font Family Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap");
+
+/* ================== Start Global Rules */
+
+/* Global Variables */
+:root{
+    --bg-primary: #000000;
+    --bg-secondary: #18181b;
+    --bg-third: rgba(39, 39, 42);
+    --text-primary: #f4f4f5;
+    --text-secondary: #a1a1aa;
+    --color-primary: #00b1ba;
+    --border-color-primary: rgba(63, 63, 70, 0.4);
+    --icon-hover-color: #d4d4d8;
+    --container-padding: 4.8rem;
+}
+
+/* Light Mode */
+.light {
+    --bg-primary: rgb(250, 250, 250);
+    --bg-secondary: rgb(255, 255, 255);
+    --bg-third: rgb(253, 253, 253);
+    --text-primary: rgb(39 39 42);
+    --text-secondary: rgb(82 82 91);
+    --color-primary: #00b1ba;
+    --border-color-primary: rgba(202, 202, 202, 0.518);
+    --icon-hover-color: #333;
+  }
+
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Html */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body Style */
+body{
+    font-family: "Roboto", sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* list Style */
+ul{
+    list-style: none;
+}
+
+/* link Style */
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s ease;
+}
+
+/* Container Style */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid var(--border-color-primary);
+    border-top: 1px solid transparent;
+    border-bottom: none;
+    background-color: var(--bg-secondary);
+    padding: 0 var(--container-padding);
+}
+
+/* Divider Style */
+.divider{
+    border-bottom: 1px solid var(--border-color-primary);
+    margin: 3rem calc(var(--container-padding) * -1);
+}
+
+/* Buttons */
+button{
+    all: unset;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scroll2Top {
+    background-color: #00b1ba;
+    color: #f4f4f5;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+  }
+  
+  .scroll2Top:hover {
+    background-color: #008c93;
+  }
+
+/* Media query */
+
+/* Large Devices */
+@media (max-width: 1000px) {
+    .container {
+      --container-padding: 1.7rem;
+      width: 90%;
+      padding: 0 var(--container-padding);
+    }
+  }
+
+/* Small Devices */
+@media (max-width: 600px) {
+    .container {
+      width: 98%;
+      padding: 0 var(--container-padding);
+    }
+}
+
+/* ================== End Global Rules ================== */

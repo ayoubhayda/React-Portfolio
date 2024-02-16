@@ -1,0 +1,153 @@
+/* =================== Start Header Style =================== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  height: 50px;
+}
+/* =================== End Header Style =================== */
+/* -------------------- */
+
+/* =================== Start Navbar Style =================== */
+.header .navbar {
+  background-color: var(--bg-third);
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 40px #2323242a;
+  border: 1px solid var(--border-color-primary);
+}
+
+.navbar .navigate {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+/* =================== End Navbar Style =================== */
+/* -------------------- */
+
+/* =================== Start Btn-Mode & Btn-Menu Style =================== */
+.header button{
+  font-size: 1.2rem;
+}
+
+.header .btn-modal{
+  display: none;
+  cursor: pointer;
+}
+
+.header .btn-modal, 
+.header .btn-mode
+{
+  cursor: pointer;
+  background-color: var(--bg-third);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-secondary);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+}
+
+.header .icon-sun1{
+  color: rgb(255, 165, 0);
+}
+
+.header .btn-modal:hover, 
+.header .btn-mode:hover
+{
+  color: var(--text-primary);
+  border: 1px solid rgb(244, 165, 96);
+}
+/* =================== End Btn-Mode & Btn-Menu Style =================== */
+/* -------------------- */
+
+/* =================== Start Modal Style =================== */
+.header .glass{
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+  backdrop-filter: blur(4px);
+}
+
+@keyframes move-modal {
+  0% {
+    scale: 0;
+  }
+
+  60% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.header .glass .model{
+  animation: move-modal .77s 1;
+  background: var(--bg-secondary);
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.header .glass .model .nav-item{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color-primary);
+  height: 45px;
+}
+
+.header .glass .model .nav-item:last-child{
+  border: none;
+}
+
+.header .glass .model .icon-clear{
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  cursor: pointer;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-secondary);
+  transition: 0.3s;
+}
+
+.header .glass .model .icon-clear:hover{
+  font-size: 28px;
+  color: crimson;
+  rotate: 180deg;
+}
+/* =================== End Modal Style =================== */
+/* -------------------- */
+
+/* =================== Start Responsive Design (media query) Style =================== */
+@media (max-width: 700px) {
+  .header .navbar {
+    display: none;
+  }
+
+  .header .btn-modal{
+    display: block;
+  }
+}
+/* =================== End Responsive Design (media query) Style =================== */
+/* -------------------- */

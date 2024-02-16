@@ -1,0 +1,169 @@
+/* =========== Start Contact Section Style =========== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ----------- Contact Header Style ----------- */
+.contact .contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact .contact-header .title .icon-mail {
+  color: var(--text-secondary);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact .contact-header .title {
+  font-size: 2.1rem;
+  color: var(--text-primary);
+}
+
+.contact .contact-header .subtitle {
+  color: var(--text-secondary);
+  line-height: 1.65rem;
+}
+
+.contact .contact-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contact .contact-body .left-section {
+  flex-grow: 1;
+}
+
+.contact .contact-body .left-section .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+.contact .contact-body .left-section .form .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.contact .contact-body .left-section .form .input-field label {
+  color: var(--text-secondary);
+}
+
+
+.contact #email,
+.contact #message {
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63 63 70);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  font-size: 1.1rem;
+  outline: none;
+  resize: none;
+  color: var(--text-primary);
+}
+
+.light .contact #email,
+.light .contact #message {
+  background-color: rgba(255, 255, 255, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
+}
+
+.contact #email:focus,
+.contact #message:focus,
+.contact #email:hover,
+.contact #message:hover {
+  border: 1px solid rgb(45 212 191);
+}
+
+.light .contact #email:focus,
+.light .contact #message:focus,
+.light .contact #email:hover,
+.light .contact #message:hover {
+  border: 1px solid rgb(78, 80, 80);
+}
+
+.contact .submit {
+    background-color: #008c93;
+    color: #f4f4f5;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .contact .form .submit:hover {
+    scale: 0.97;
+  }
+
+  .contact .message-sent{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-top: 1.7rem;
+    color: var(--text-secondary);
+  }
+
+  .contact .done{
+    width: 25px;
+  }
+
+  .right-section{
+  width: 50%;
+  }
+
+
+  /* =====================================
+  3- Responsive Design (media query)
+======================================== */
+
+
+@media (max-width: 830px) {
+  .contact .form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .contact .form .input-field{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .contact .form .input-field label{
+      display: none;
+    }
+
+  .contact #email,
+  .contact #message {
+    width: 100%;
+  }
+
+  .contact .submit {
+    width: 30%;
+    align-self: center;
+  }
+
+  .contact .right-section{
+    display: none;
+  }
+}
+
+/* =========== End Contact Section Style =========== */
