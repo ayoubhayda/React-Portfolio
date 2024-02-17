@@ -2,6 +2,10 @@
 
 This repository contains a simple portfolio website built using React. The portfolio consists of a hero section, a projects section, and a contact us section.
 
+## Demo
+
+You can view a live demo of the portfolio [here](https://react-portfolio-cc21c.web.app/).
+
 ## Features
 
 - Hero Section: Introduces the creator and provides a brief overview.
